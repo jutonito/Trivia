@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.content {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    border-radius: 100rem;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content img {
+    width: 35rem;
+    height: 35rem;
+    height: auto;
+    align-items: center;
+}
+.content h1, .content h2 {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; 
+}
+.content h1 {
+    top: 15%;
+    font-size: 4em; 
+    
+}
+.content h2 {
+    top: 70%;
+    font-size: 2em; 
+}
+
+.boton{
+    border-radius:0.3rem;
+}
+.boton a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+.boton{
+    background:#695da3;
+    
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    width: 250px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+.boton:hover{
+    background:#fff;
+    color:#474170;
+}
+.boton:before,.boton:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: 
+    #474170;
+    transition:400ms ease all;
+}
+.boton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.boton:hover:before,.boton:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+

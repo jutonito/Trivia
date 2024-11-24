@@ -1,0 +1,125 @@
+body {
+    font-style: italic;
+    height: 100vh;
+    margin: 0;
+}
+
+.puntaje {
+    font-size: 16px;
+}
+
+.boton{
+    align-items: center;
+    border-radius:0.3rem;
+}
+.boton a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+.boton{
+    background:#1c64a3;
+    
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    width: 250px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+.boton:hover{
+    background:#fff;
+    color:#1c64a3;
+}
+.boton:before,.boton:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: 
+    #1c64a3;
+    transition:400ms ease all;
+}
+.boton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.boton:hover:before,.boton:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+.juego .opcion{
+    display: block;
+    width: 90%;
+    margin: auto;
+    border: 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.juego .opcion:hover{
+    background-color: #2a2929;
+    color: #fff;
+}
+.correcta{
+    background-color: rgba(56, 175, 86, 0.719);
+}
+.incorrecta{
+    background-color: rgba(192, 14, 14, 0.815);
+}
+.no-events{
+    pointer-events: none;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        color: #fff;
+        font-weight: bold;
+    }
+    40% {
+        transform: scale(1.3);
+        color: #ffe43a;
+    }
+    60% {
+        transform: scale(1.3);
+        color: #ffe43a;
+    }
+    100% {
+        transform: scale(1);
+        color: #fff;
+        font-weight: normal;
+    }
+}
+
+.btn:hover {
+    background-color: #2a2929;
+}
+
+
+.list-group-item {
+    font-weight: bold;
+}
+
+.list-group-item.gold {
+    background-color: rgb(63, 141, 243);
+    color: 	#D4AF37;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; 
+}
+
+
+
+
